@@ -5,19 +5,27 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 body {
     font-family: 'Orbitron', sans-serif;
     background-color: #0d0d0d;
     color: #ffffff;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .splash-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 40%, rgba(0,0,0,1) 100%);
     position: relative;
 }
@@ -44,11 +52,11 @@ p {
 /* Node container */
 .node-container {
     display: flex;
-    justify-content: center; /* Centers nodes */
-    align-items: center; /* Centers them vertically */
-    gap: 100px; /* Space between nodes */
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     position: relative;
-    width: 100%; /* Full width for better alignment */
+    width: 100%;  /* Full width to align with screen */
 }
 
 /* Node links */
@@ -107,8 +115,8 @@ p {
     content: '';
     position: absolute;
     top: 50%;
-    left: 0; /* Aligns the line to the left */
-    width: 100%; /* Spans the whole width */
+    left: 0;
+    width: 100%;
     height: 2px;
     background-color: #00ffcc;
     z-index: 0;
