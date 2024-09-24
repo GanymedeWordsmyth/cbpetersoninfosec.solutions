@@ -14,10 +14,12 @@ body {
 
 h1 {
     color: #00ffcc;
+    border: #f0f;
     text-align: center;
 }
 
 p {
+    color: #e0e0e0;
     text-align: center;
 }
 
