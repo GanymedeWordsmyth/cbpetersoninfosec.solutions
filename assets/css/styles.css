@@ -6,6 +6,10 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    background-image: url(/assets/images/cyberpunk-bg.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
