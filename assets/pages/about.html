@@ -4,26 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - My Website</title>
-    <script src="../../paths.js"></script> <!-- Adjust path to paths.js -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = paths.css.main; // Use the CSS path from paths.js
-            document.head.appendChild(link);
-        });
-    </script>
 </head>
 <body>
-    <div id="nav-placeholder"></div>
+    <script type="module">
+        import { nav } from '/nav.js';
 
+        document.body.prepend(nav);
+    </script>
+    
     <h1>About Me</h1>
     <p>This is the about page of my website.</p>
 
-    <script>
-        document.getElementById("home-link").href = paths.pages.home;
-        document.getElementById("about-link").href = paths.pages.about;
-        document.getElementById("tech-link").href = paths.pages.tech;
-    </script>
 </body>
 </html>

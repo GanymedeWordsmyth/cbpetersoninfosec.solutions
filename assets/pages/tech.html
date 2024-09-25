@@ -4,26 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog - My Website</title>
-    <script src="../../paths.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = paths.css.main; // Load CSS dynamically
-            document.head.appendChild(link);
-        });
-    </script>
 </head>
 <body>
-    <div id="nav-placeholder"></div>
+    <script type="module">
+        import { nav } from '/nav.js';
 
+        document.body.prepend(nav);
+    </script>
+    
     <h1>Tech Blog</h1>
     <p>Welcome to my tech blog. Stay tuned for upcoming posts!</p>
 
-    <script>
-        document.getElementById("home-link").href = paths.pages.home;
-        document.getElementById("about-link").href = paths.pages.about;
-        document.getElementById("tech-link").href = paths.pages.tech;
-    </script>
 </body>
 </html>
