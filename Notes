@@ -1,0 +1,2 @@
+Is it possible to have the routes as variables within each file?
+Make a routes.js for each sub...actually, I dont need to do this because "/" means "root directory"
