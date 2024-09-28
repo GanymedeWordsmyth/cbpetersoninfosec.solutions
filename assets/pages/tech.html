@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog - My Website</title>
+    <title>Home - My Website</title>
     <script src="/paths.js"></script> <!--Load the routes file-->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -15,14 +15,35 @@
     </script>
 </head>
 <body>
-    <script type="module">
-        import { nav } from '/nav.js';
-
-        document.body.prepend(nav);
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET','/nav.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('nav-placeholder').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
     </script>
-    
-    <h1>Tech Blog</h1>
-    <p>Welcome to my tech blog. Stay tuned for upcoming posts!</p>
+
+    <h1>Lorem Ipsum</h1>
+    <p>Paragraph</p>
 
 </body>
+<footer>
+    <!-- Logo -->
+    <a href="/index.html">
+        <img id="logo" alt="Logo" />
+    </a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var logo = document.getElementById('logo');
+            logo.src = paths.images.logo;
+        });
+    </script>
+</footer>
 </html>
