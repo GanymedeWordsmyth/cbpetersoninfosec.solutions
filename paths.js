@@ -13,7 +13,7 @@ const paths = {
         background: "/assets/images/cyberpunk-bg.png"
     },
     pages: {
-        home: "index.html",
+        home: "/",
         about: "/assets/pages/about.html",
         tech: "/assets/pages/tech.html",
         contact: "/assets/pages/contact.html"
