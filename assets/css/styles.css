@@ -1,8 +1,12 @@
 /* Main Styles for the Website */
 logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     width: 15px;
     height: auto;
     margin: 20pz;
+    z-index: 1000;
 }
 
 body {
