@@ -1,4 +1,9 @@
 /* Main Styles for the Website */
+logo {
+    width: 150px;
+    height: auto;
+    margin: 20pz;
+}
 
 body {
     font-family: Arial, sans-serif;
