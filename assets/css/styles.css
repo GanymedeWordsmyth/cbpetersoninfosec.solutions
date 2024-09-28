@@ -7,6 +7,12 @@
     height: auto;
     margin: 20pz;
     z-index: 1000;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+#logo:hover {
+    opacity: 1;
 }
 
 body {
