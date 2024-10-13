@@ -21,7 +21,7 @@
     --aug-br: 25px;
     --aug-br-inset2: 40%;
     --aug-border-all: 10px;
-    --aug-border-bg: linear-gradient(to botto...);
+    --aug-border-bg: linear-gradient(to bottom);
     --aug-inlay-all: 10px;
     --aug-inlay-bg: #fbe806;
     background: linear-gradient(#ff604d, #b1ffff);
