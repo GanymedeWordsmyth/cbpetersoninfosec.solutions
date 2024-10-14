@@ -1,7 +1,7 @@
 const paths = {
     css: {
         main: "/assets/css/styles.css",
-        theme: "/assets/css/theme.css"
+        theme: "/assets/css/augmented-ui/augmented-ui.min.css"
     },
     js: {
         main: "/assets/js/script.js",
